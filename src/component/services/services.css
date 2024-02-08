@@ -1,0 +1,50 @@
+
+.scards{
+    width: 400px;
+    background-color: rgb(91, 91, 238);
+     color: aliceblue;
+    text-align: center;
+}
+.simgs{
+    width:400px;
+    height: 200px;
+    
+}
+
+.scardst{
+width: 400px;
+    background-color: rgb(142, 46, 190);
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.imgtwo{
+     width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.imgthree{
+     width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sertext{
+    padding: 1%;
+}
+@media screen and (max-width:960) {
+.caraousel-serv{
+    display: block;
+    flex-wrap: wrap;
+}
+
+.scardst{
+
+      width:100% ;
+    display: block;
+  
+    flex-wrap: wrap;
+}
+    
+}

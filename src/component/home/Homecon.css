@@ -1,0 +1,157 @@
+#Homecontent {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.homeconone {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(168, 240, 240);
+}
+.confirst-home {
+  width: 100%;
+  height: 400px;
+}
+.onecon {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 3%;
+}
+.sidecon {
+  width: 10%;
+}
+.cononetext {
+  width: 400px;
+  text-align: center;
+}
+#onetextheading {
+  color: rgb(151, 66, 243);
+}
+#conpara {
+  color: white;
+  font-family: cursive;
+}
+
+.form-heading {
+  background-color: rgb(160, 78, 237);
+  color: white;
+  margin: 0%;
+  padding: 1%;
+  text-align: center;
+}
+.contactform {
+  background-color: white;
+  margin-top: 5%;
+}
+.form-control {
+  margin: 0%;
+  padding: 5%;
+}
+
+.form {
+  margin: auto;
+}
+input {
+  margin: 10px 5px;
+  width: 70%;
+}
+
+#subbtndiv {
+  text-align: center;
+  margin: auto;
+}
+
+.imgscon {
+  width: 10.5rem;
+}
+.imgscon img {
+  width: 100%;
+  opacity: 70%;
+}
+
+.second-div {
+  width: 100%;
+  height: 200px;
+  margin-top: 5%;
+}
+.second-div-head {
+  width: 100%;
+  text-align: center;
+}
+
+.seccond-div-con {
+  display: flex;
+  width: 100%;
+}
+
+.sidecons {
+  width: 15%;
+  height: fit-content;
+}
+
+.card {
+  width: 18%;
+  height: auto;
+  margin: auto;
+}
+#whus {
+  color: rgb(22, 58, 112);
+}
+
+.imgs {
+  color: rgb(30, 30, 69);
+}
+.card {
+  text-align: center;
+}
+.services {
+  width: 100%;
+  height: 300px;
+  background-color: bisque;
+}
+
+@media screen and (max-width: 960px) {
+  .homeconone {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(168, 240, 240);
+    flex-wrap: wrap;
+  }
+
+  .confirst-home {
+    width: 100%;
+    height: fit-content;
+    margin: 2% 1%;
+  }
+
+  .seccond-div-con {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .onecon {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  .card {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    height: auto;
+    margin: auto;
+  }
+  .second-div {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5%;
+  }
+}
