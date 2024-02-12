@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+import {useSpring,animated} from '@react-spring/web'
+
 
 const Navbar = () => {
 const [istogle, setistogle]=useState(false)
@@ -8,11 +10,11 @@ const [istogle, setistogle]=useState(false)
         setistogle(!istogle)
     }
 
+
+
+
+
     return (
-
-
-
-        
 
 
         <div id='Navbar'>
@@ -23,8 +25,8 @@ const [istogle, setistogle]=useState(false)
                
                     
                <div className="navldiv">
-                    <div className="nlogodiv">
-
+                    <div className="nlogodiv" >
+                        
                       
 
                             <NavLink to='/'>
@@ -33,8 +35,8 @@ const [istogle, setistogle]=useState(false)
                                 alt="logo"  id='clogo'/>
                             </NavLink>
 
-                        
-                       </div>
+                        </div>
+                       
                 </div>
                 
                 <div className="navmenu">
@@ -65,7 +67,7 @@ const [istogle, setistogle]=useState(false)
                             <div className="nmenut">
                             <NavLink to='/review'>
                                 <button className='nbtm'>
-Reviews
+                              Reviews
                                 </button>
 
                             </NavLink>
@@ -85,15 +87,15 @@ Reviews
                        <p>9832732828</p>
                     <p>Email: xyzs@gmail.com</p> 
               
-                </div>
-                </div>
+                    </div>
+                     </div>
 
 
                
                 
 
 
-            </div>
+                </div>
             <div className="Navbbar">
             <div className="rightmenu">
 
@@ -107,7 +109,7 @@ Reviews
                             <img src="https://media.istockphoto.com/id/1312665318/vector/medical-logo-design-vector.jpg?s=2048x2048&w=is&k=20&c=mG83Z1cyUhDSes1z3nO45CBkuMPqwz2sEC7____MYnM="
                                 alt="logo" id='clogo' />
                         </NavLink>
-
+                            
 
                     </div>
                 </div>

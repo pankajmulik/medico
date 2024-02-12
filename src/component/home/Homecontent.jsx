@@ -2,7 +2,10 @@ import React from 'react'
 import './Homecon.css'
 import Services from '../services/Services'
 import Videoplayer from '../Videoplayer'
-
+import { animated, useSpring } from '@react-spring/web';
+import Animate from '../animation/Animate';
+import AniForms from '../userform/AniForms';
+import AnimatedNav from '../navbar/AnimatedNav';
 
 const Homecontent = () => {
 
@@ -16,14 +19,18 @@ const Homecontent = () => {
           <div className="sidecon">
 
           </div>
-          <div className="cononetext">
+            <div className="cononetext">
+              
+              <Animate />
 
-            <h1 id='onetextheading'>Quality Medical treatment</h1>
+           
 
-            <p id='conpara'>
+              <p id='conpara' >
+                <animateMotion >
               With Best Medical staff <br /> a
             Equiped with latest machinery <br />
                   We offer better Treatment
+                  </animateMotion>
             </p>
 
 
@@ -45,12 +52,10 @@ const Homecontent = () => {
 
           <div className="form-control">
 
-            <div>
-              <p style={{ fontSize:'10px'}}>
-                Fill the details below so we our Executive get in touch with you for bool an appointment!
-              </p>
-            </div>
-            <form action="#" method="post">
+            
+              
+              <AniForms/>
+            {/* <form action="#" method="post">
               <div>
                   <label htmlFor="name">Name:</label>
                   <br />
@@ -73,14 +78,14 @@ const Homecontent = () => {
                 <button type="submit" id='subbtn'>Submit</button>
               </div>
 
-            </form>
+            </form> */}
           </div>
 
 
         </div>
 
         <div className="sidecon">
-
+           
         </div>
 
         </div></div>
@@ -97,7 +102,7 @@ const Homecontent = () => {
         
            </div>
 
-        
+          
           
           <div className="card">
 
@@ -110,7 +115,7 @@ const Homecontent = () => {
                 <br />
                 Our Surgens are among top dcoctor <br />
                 in india.
-</p>
+                 </p>
             </div>
 
           </div>
@@ -121,7 +126,7 @@ const Homecontent = () => {
             <div className="text">
 
               <h3>Family Medicine</h3>
-<p>
+               <p>
               We care for you and Your Family.
               <br />
                 Lets make a healthy community
@@ -146,7 +151,7 @@ const Homecontent = () => {
 
           </div>
           
-      
+     
 
         <div className="sidecons">
 

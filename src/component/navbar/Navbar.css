@@ -23,11 +23,12 @@
 }
 .nmenut {
   text-align: center;
-  margin: auto;
+  margin: 5%;
 }
 .nmenut button {
   background: none;
   border: none;
+  margin: 2%;
 }
 #clogo {
   width: 150px;
@@ -38,6 +39,7 @@
   width: 20%;
 }
 .contact {
+  margin-left: 5%;
   text-align: right;
 }
 
