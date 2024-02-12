@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+import '../home/Homecon.css'
 import { useSpring, useSpringRef, animated, useTransition, } from '@react-spring/web'
 
 const AniForms = () => {
@@ -21,21 +21,7 @@ const AniForms = () => {
         })
     }
 
-    const props = useSpring({
-        
-        from: {
-            opacity: 0 
-            
-        },
-       
-        to: {
-            opacity:0.7
-        },
-        to: {
-            opacity: 1
-        }
-        
-    })
+    
 
     useEffect(() => {
         handleClick();

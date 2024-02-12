@@ -36,9 +36,9 @@ const Services = () => {
                         </div>
                         <div className="sertext" >
                             <h3>
-                                Modern Equipment
+                                Modern Devices
                             </h3>
-                            <p>Equiped with latest machineries to cure </p>
+                            <p>Access to good quality, affordable, and appropriate health products is indispensable to advance universal health coverage, address health emergencies, and promote healthier populations. </p>
                         </div>
                     </div>
                     <div className='scards'>
@@ -51,7 +51,9 @@ https://st3.depositphotos.com/10654624/14666/i/380/depositphotos_146663073-stock
 
                             <div className="sertext" >
                                 <h3>Child Health</h3>
-                                <p>Child heakth is necessary</p>
+                                <p>Child heakth is necessary
+                                    <br />Facility Based Newborn and Child Care 
+                                </p>
                             
                             </div>
                         </div>

@@ -8,8 +8,19 @@
 .simgs{
     width:400px;
     height: 200px;
+ 
+}
+.simgs::before{
+    opacity: 0.3;
+
+}
+.simgs::after{
+    opacity: 1;
+    transition: 2s;
     
 }
+
+
 
 .scardst{
 width: 400px;

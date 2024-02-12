@@ -7,7 +7,7 @@ const Animate = () => {
     const api = useSpringRef()
     const springs = useSpring({
         ref: api,
-        from: { x: 0 }
+        from: { x: -100 }
 
     })
 
@@ -19,7 +19,7 @@ const Animate = () => {
 
             to: {
 
-                x: springs.x.get() === -100 ? 0 : -100,
+                x: springs.x.get() === -100 ? 0 : 0,
             },
         })
     }
@@ -40,7 +40,7 @@ const Animate = () => {
                     ...springs,
                 }}
             >
-                <h1 id='onetextheading'>Quality Medical treatment</h1>
+                <h1 id='onetextheading'>Quality Medical <br /> Treatment</h1>
 
             </animated.div>
 

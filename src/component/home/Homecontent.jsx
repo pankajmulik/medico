@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Homecon.css'
 import Services from '../services/Services'
 import Videoplayer from '../Videoplayer'
@@ -6,10 +6,21 @@ import { animated, useSpring } from '@react-spring/web';
 import Animate from '../animation/Animate';
 import AniForms from '../userform/AniForms';
 import AnimatedNav from '../navbar/AnimatedNav';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const Homecontent = () => {
 
-  
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <div id='Homecontent'>
       <div className="confirst-home">
@@ -38,7 +49,7 @@ const Homecontent = () => {
           <div className="imgscon">
 
             <img src="https://media.istockphoto.com/id/1344622271/photo/family-portrait.jpg?s=612x612&w=0&k=20&c=2a_6tktGhkiG_pm7PFQ8-x5sJAF2PBQrdtTO0u-MhPc="
-              alt="family pic" />
+              alt="family pic" id='familypic'/>
           </div>
 
           </div>
@@ -104,7 +115,7 @@ const Homecontent = () => {
 
           
           
-          <div className="card">
+          <div className="card" data-aos="fade-down-right">
 
             <div className="imgs">
               <i class="fa-solid fa-user-doctor" style={{fontSize:'50px',}}></i>
@@ -119,7 +130,7 @@ const Homecontent = () => {
             </div>
 
           </div>
-          <div className="card">
+          <div className="card" data-aos="fade-up" data-aos-delay="100">
 
             <div className="imgs"><i class="fa-solid fa-people-group"style={{ fontSize: '50px' }}></i>
             </div>
@@ -135,7 +146,7 @@ const Homecontent = () => {
             </div>
 
           </div>
-          <div className="card">
+          <div className="card" data-aos="fade-down-left" data-aos-delay="100">
 
             <div className="imgs">
               <i class="fa-solid fa-clock-rotate-left" style={{ fontSize: '50px' }}> 24*7</i>
