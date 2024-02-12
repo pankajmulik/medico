@@ -27,7 +27,7 @@ const AniForms = () => {
         handleClick();
     })
   return (
-      <div>
+      <div id='anifrm'>
           
           <animated.div 
               
@@ -41,8 +41,8 @@ const AniForms = () => {
         
           >
               <div>
-                  <p style={{ fontSize: '10px' }}>
-                      Fill the details below so we our Executive get in touch with you for bool an appointment!
+                  <p style={{ fontSize: '14px' }}>
+                      Fill the details below so we our Executive <br /> get in touch with you for bool an appointment!
                   </p>
               </div>
               

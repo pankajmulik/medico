@@ -18,7 +18,8 @@ const Videoplayer = () => {
               controls={ playerref}
               
            
-             playing={true}
+              playing={true}
+              width={'100%'}
           
           >
               
@@ -31,8 +32,8 @@ const Videoplayer = () => {
 
           
          
-          <div style={{textAlign:'center',padding:'5%'}}>
-              <h1 style={{color:'aquamarine'}}>
+          <div  id='vtexts'>
+              <h1 style={{color:'aquamarine'}} >
               Watch a demo you will get a bit overview of our services <br />
                   thank you
                   

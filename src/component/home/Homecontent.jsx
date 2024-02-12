@@ -175,7 +175,9 @@ const Homecontent = () => {
       <div className="services">
         <Services/>
       </div>
-      <Videoplayer/>
+      <div id='vplayer'>
+        <Videoplayer />
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+import '../home/Homecon.css'
 import { useSpring, useSpringRef, animated, useTransition, } from '@react-spring/web'
 
 const Animate = () => {
@@ -28,7 +28,7 @@ const Animate = () => {
         handleClick();
     })
     return (
-        <div>
+        <div id='anhdiv'>
 
 
             <animated.div

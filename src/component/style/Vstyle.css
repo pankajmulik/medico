@@ -2,13 +2,24 @@
     margin-top: 10%;
     display: flex;
 }
+#vtexts{
+   text-align: center;
+   padding: 5%;
 
+}
 
 @media screen and (max-width: 960px){
     #vplay{
 
         display: block;
-        width: 100%;
+        width:100%;
+        flex-wrap: wrap;
+        margin: 15%;
+        justify-content: center;
+    }
+    #vtexts{
+        display: block;
+        width: 80%;
         flex-wrap: wrap;
     }
 }
