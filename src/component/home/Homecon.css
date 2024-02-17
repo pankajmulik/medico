@@ -47,18 +47,21 @@
 }
 
 .contactform {
-  margin-top: 5%;
-  margin-bottom: 8%;
+  margin: 5%;
+  
+
   width: 30%;
   height: 25rem;
   background-color: rgb(252, 251, 251);
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px 3px gray;
 }
 .form-control {
   margin: 0%;
 }
 #anifrm {
   height: 18rem;
-  border: 1px black solid;
   padding: 4%;
 
 }
@@ -88,6 +91,7 @@ input {
 .imgscon img {
   width: 100%;
   opacity: 0.5;
+  ;
 }
 
 img:hover {
@@ -143,6 +147,50 @@ img:hover {
 #vplayer{
   width: 100%;
 }
+
+
+.departments{
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+
+}
+
+.departments button{
+  background-color: orange;
+  border: none;
+  border-radius: 20%;
+}
+
+
+
+#deptsmenus{
+  display: flex;
+  margin: auto;
+ 
+}
+
+.depti{
+  width: auto;
+  margin:0px 40px ;
+  color: rgb(8, 82, 45);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 960px) {
   .homeconone {
     display: block;
@@ -156,6 +204,11 @@ img:hover {
     width: 100%;
     height: fit-content;
     margin: 2% 1%;
+  }
+
+  .imgscon{
+    width: 100%;
+    margin: auto;
   }
 
   .seccond-div-con {
@@ -202,3 +255,5 @@ img:hover {
     width: auto;
   }
 }
+
+

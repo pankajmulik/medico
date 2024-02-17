@@ -52,7 +52,9 @@ https://st3.depositphotos.com/10654624/14666/i/380/depositphotos_146663073-stock
                             <div className="sertext" >
                                 <h3>Child Health</h3>
                                 <p>Child heakth is necessary
-                                    <br />Facility Based Newborn and Child Care 
+                                    <br />Facility Based Newborn and Child Care <br />
+                                    Assisting children and their families in transitioning from pediatric health care
+                                     and active engagement with health care providers.
                                 </p>
                             
                             </div>

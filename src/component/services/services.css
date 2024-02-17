@@ -1,6 +1,7 @@
 
 .scards{
     width: 400px;
+    height: 100%;
     background-color: rgb(91, 91, 238);
      color: aliceblue;
     text-align: center;
@@ -24,6 +25,7 @@
 
 .scardst{
 width: 400px;
+height: 100%;
     background-color: rgb(142, 46, 190);
     color: aliceblue;
     text-align: center;
