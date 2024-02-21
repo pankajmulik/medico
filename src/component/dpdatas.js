@@ -1,7 +1,7 @@
 const depds = [
     {
         dept: 'Oncology',
-        name:'Dr. Akshay '
+        name: 'Dr. Tejas Jadhav'
     },
     {
         dept: 'Neurology',
@@ -11,11 +11,11 @@ const depds = [
         dept: 'Radiotherepy',
         name: 'Dr.Shubham '
     },
-     {
+    {
         dept: 'Physio therepy',
         name: 'Dr.Priyesh '
     },
-      {
+    {
         dept: 'Ayurveda',
         name: 'Dr. AkshayKumar '
     }
