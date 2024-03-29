@@ -1,11 +1,12 @@
 export const addAppointment = (appointment) => {
-    
+
     return (dispatch) => {
-        
+
         dispatch({
             type: 'schedule',
-            payload:appointment
-})
+            payload: appointment
+
+        })
 
     }
 
@@ -13,14 +14,14 @@ export const addAppointment = (appointment) => {
 
 export const cancelAppointment = (appointment) => {
 
-    return () => {
+    return (dispatch) => {
         dispatch({
             type: 'cancel',
-            payload:appointment
-    })
+            payload: appointment
+        })
 
 
-}
+    }
 
 
 }

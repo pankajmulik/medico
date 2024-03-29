@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Homecon.css'
 import Services from '../services/Services'
 import Videoplayer from '../Videoplayer'
@@ -9,7 +9,7 @@ import AnimatedNav from '../navbar/AnimatedNav';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Departments from '../Departments';
-
+import noteContext from '../context/notes/noteContext';
 
 const Homecontent = () => {
 
@@ -20,7 +20,7 @@ const Homecontent = () => {
 
   }
 
-
+const a=useContext(noteContext)
 
   useEffect(() => {
     AOS.init({
@@ -116,7 +116,9 @@ const Homecontent = () => {
           </div>
 
         </div></div>
-      <div className="second-div">
+      <div className="second-div" >
+        
+
 
         <div className="second-div-head">
           <h1 id='whus'>Why  us ....</h1>
@@ -198,9 +200,13 @@ const Homecontent = () => {
             
         
         
-}
+        }
+        
 
       </div>
+      <div className="notes" style={{ textAlign: 'center', fontFamily: 'cursive', fontSize: '25px', margin: 'auto' }}>   <h2>{a.name}</h2>
+        <h3>{a.Head}</h3></div>
+
 
       <div className="services">
         <Services />
@@ -208,6 +214,10 @@ const Homecontent = () => {
       <div id='vplayer'>
         <Videoplayer />
       </div>
+
+
+
+     
     </div>
   )
 }

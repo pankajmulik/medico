@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import {useSpring,animated} from '@react-spring/web'
-
+import  {useSelector} from 'react-redux'
 
 const Navbar = () => {
 const [istogle, setistogle]=useState(false)
@@ -10,8 +10,7 @@ const [istogle, setistogle]=useState(false)
         setistogle(!istogle)
     }
 
-
-
+const appointment=useSelector(state=>state.appointment)
 
 
     return (
@@ -88,6 +87,11 @@ const [istogle, setistogle]=useState(false)
                     <p>Email: xyzs@gmail.com</p> 
               
                     </div>
+
+                    <div className="appnum">
+                        Todays Appointment <br />
+                        {appointment}
+</div>
                      </div>
 
 

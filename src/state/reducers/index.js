@@ -3,7 +3,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 import reducer from './apreduce'
 
 const reducers = combineReducers({
-    appointmnet :reducer
+   appointment :reducer
 })
 
 export default reducers

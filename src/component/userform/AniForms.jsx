@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import '../home/Homecon.css'
 import { useSpring, useSpringRef, animated, useTransition, } from '@react-spring/web'
+import {useDispatch} from 'react-redux'
+import { bindActionCreators } from '@reduxjs/toolkit'
+import { actionCreators } from '../../state'
+
 
 const AniForms = () => {
 
     const [issubmit, setissubmit] = useState(false)
 
-
+    const dispatch = useDispatch();
+const {addAppointment,cancelAppointment}=bindActionCreators(actionCreators,dispatch)
 
     const handleclick = () => {
-    setissubmit(true)
+        setissubmit(true)
+        addAppointment(1)
 }
     
 
-    
+   
 
 
 
@@ -47,14 +53,14 @@ const AniForms = () => {
                     <div className="appointmentedit">
                         Cancel Appointment
 
-                        <button> click here</button>
+                        <button onClick={()=>cancelAppointment(1)}> click here</button>
                     </div>
 
-                    <div className="appointmentedit">
+                <div className="appointmentedit">
                         Reschedule Appointment
-                        <button> click here</button></div>
+                        <button onClick={handleclick} > click here</button></div>
 
-                    
+                   
                     
 
 
